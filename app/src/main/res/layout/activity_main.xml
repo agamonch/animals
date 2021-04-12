@@ -6,17 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:id="@+id/cat"
+        android:id="@+id/imgCat"
         android:clickable="true"
         android:focusable="true"
         android:layout_width="95dp"
@@ -24,11 +15,13 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:src="@drawable/cat"
-        app:layout_constraintEnd_toStartOf="@+id/chick"
+        app:layout_constraintEnd_toStartOf="@+id/imgChick"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/chick"
+        android:id="@+id/imgChick"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_width="95dp"
         android:layout_height="102dp"
         android:layout_marginTop="40dp"
@@ -38,7 +31,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/horse"
+        android:id="@+id/imgHorse"
+        android:clickable="true"
+        android:focusable="true"
         android:layout_width="95dp"
         android:layout_height="102dp"
         android:layout_marginTop="40dp"
@@ -46,5 +41,20 @@
         android:src="@drawable/horse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="180dp"
+        android:textSize="25dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:gravity="center"
+        android:text="CLick on the picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgChick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
